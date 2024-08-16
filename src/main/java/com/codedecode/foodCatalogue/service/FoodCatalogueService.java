@@ -46,8 +46,8 @@ public class FoodCatalogueService {
         // Therefore, we should use the name of the MS directly as the link to the MS, hit an endpoint
         // The second argument is the Response, and we have to Map it to our DTO, which is our Restaurant DTO define in /dto folder
         //  => Whatever response you get from the restaurant listing, MS will be mapped to restaurant DTO type in our application
-        // Eureka will go by Microservice registered name with Eureka (RESTAURANTLISTING) and treat it as localhost:9091, but not using port number
-        return restTemplate.getForObject("http://RESTAURANTLISTING/restaurant/fetchById/"+restaurantId, Restaurant.class);
+        // Eureka will go by Microservice registered name with Eureka (RESTAURANT-SERVICE) and treat it as localhost:9091, but not using port number
+        return restTemplate.getForObject("http://RESTAURANT-SERVICE/restaurant/fetchById/"+restaurantId, Restaurant.class);
     }
 
     private FoodCataloguePage createFoodCataloguePage(List<FoodItem> foodItemList, Restaurant restaurant) {
