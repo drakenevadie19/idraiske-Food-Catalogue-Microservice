@@ -5,8 +5,8 @@ eureka:
 
 spring:
   datasource:
-    #db name: restaurantdb
-    url: jdbc:mysql://localhost:3306/restaurantdb
+    #db name: foodcataloguedb
+    url: jdbc:mysql://localhost:3306/foodcataloguedb
     password: "@Thanhnguyen14#"
     username: root
     driver-class-name: com.mysql.cj.jdbc.Driver
