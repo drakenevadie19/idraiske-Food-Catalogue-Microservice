@@ -10,7 +10,7 @@ import java.io.Serializable;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class FoodItemDTO implements Serializable {
+public class FoodItemDTO {
 
     private int id;
     private String itemName;

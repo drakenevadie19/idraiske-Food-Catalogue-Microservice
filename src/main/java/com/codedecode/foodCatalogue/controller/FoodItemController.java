@@ -27,6 +27,7 @@ public class FoodItemController {
     //  => Fetch all the item details and restaurant details when we are hitting with particular restaurantID
     @GetMapping("/fetchRestaurantAndFoodItemsById/{restaurantId}")
     public ResponseEntity<FoodCataloguePage> fetchRestaurantDetailsWithFoodMenu(@PathVariable Integer restaurantId) {
+//        System.out.println(restaurantId);
         // Return this object with List of Food item and restaurant details
         FoodCataloguePage foodCataloguePage = foodCatalogueService.fetchFoodCataloguePageDetails(restaurantId);
         return new ResponseEntity<>(foodCataloguePage, HttpStatus.OK);
