@@ -11,6 +11,6 @@ spring:
   datasource:
     #db name: foodcataloguedb
     url: jdbc:mysql://idr-mysql-db.cdsmu4qw4veh.eu-west-2.rds.amazonaws.com:3306/foodcataloguedb
-    password: "password"
     username: admin
+    password: "password"
     driver-class-name: com.mysql.cj.jdbc.Driver
