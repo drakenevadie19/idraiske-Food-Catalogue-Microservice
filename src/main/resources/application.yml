@@ -7,6 +7,7 @@ spring:
   application:
     name: FOOD-CATALOGUE-SERVICE
   datasource:
+    #db name: foodcataloguedb
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:

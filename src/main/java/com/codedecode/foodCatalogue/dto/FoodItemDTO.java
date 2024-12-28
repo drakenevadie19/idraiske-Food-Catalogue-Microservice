@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.Column;
 import java.io.Serializable;
+import java.math.BigDecimal;
 
 @Data
 @NoArgsConstructor
@@ -16,7 +17,7 @@ public class FoodItemDTO {
     private String itemName;
     private String itemDescription;
     private boolean isVeg;
-    private Number price;
+    private BigDecimal price;
     private Integer restaurantId;
     private Integer quantity;
 

@@ -6,11 +6,3 @@ eureka:
     service-url:
       defaultZone: http://eureka-0.eureka-service.default.svc.cluster.local:8761/eureka
 #      defaultZone: http://localhost:8761/eureka/
-
-#spring:
-#  datasource:
-#    #db name: foodcataloguedb
-#    url: jdbc:mysql://idr-mysql-db.cdsmu4qw4veh.eu-west-2.rds.amazonaws.com:3306/foodcataloguedb
-#    username: admin
-#    password: "password"
-#    driver-class-name: com.mysql.cj.jdbc.Driver
